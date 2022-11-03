@@ -83,10 +83,6 @@ component extends="BaseHandler" {
 				messageService.delete( rc.intMessageID );
 				messageBox.success( "Your message has been deleted successfully." );
 			}
-			else
-			{
-				// Modifying.
-			}
 		}
 
 		Relocate( "messages.index" );

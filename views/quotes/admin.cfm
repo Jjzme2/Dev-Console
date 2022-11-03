@@ -3,6 +3,9 @@
         <div class="pageHeaderShell">
             <div class="pageHeader">
                 <h1 class="tableTitle">Quote List</h1>
+                <sub><a href="#event.buildLink( prc.xeh.convert )#?dataType=json">Add all to JSON File</a></sub>
+                <sub><a href="#event.buildLink( prc.xeh.convert )#?dataType=xml">Add all to XML File</a></sub>
+
                 <button type="button" name="AddQuote" class="btn btn-primary" onclick="openQuote(this)" value='0'>
                     +
                 </button>

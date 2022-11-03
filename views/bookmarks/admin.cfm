@@ -3,6 +3,8 @@
         <div class="pageHeaderShell">
             <div class="pageHeader">
                 <h1 class="tableTitle">Bookmarks</h1>
+                <sub><a href="#event.buildLink( prc.xeh.convert )#?dataType=json">Add all to JSON File</a></sub>
+                <sub><a href="#event.buildLink( prc.xeh.convert )#?dataType=xml">Add all to XML File</a></sub>
                 <button type="button" name="Addbookmark" class="btn btn-primary" onclick="openBookmark(this)" value='0'>
                     +
                 </button>

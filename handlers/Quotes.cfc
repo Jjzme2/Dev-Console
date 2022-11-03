@@ -55,6 +55,7 @@ component extends="BaseHandler" {
 	{
 		prc.viewQuoteTemplate = "../quotes/view.cfm";
 		prc.xeh.process       = "quotes.process";
+		prc.xeh.convert 	  = "quotes.allToFile";
 
 		rc.quotes = quoteService.list();
 	}
@@ -133,4 +134,40 @@ component extends="BaseHandler" {
 		}
 	}
 
+	/**
+	 * Converts all quotes to the specified Data type
+	 *
+	 * @dataType A String representing the dataType to generate. JSON/XML
+	 */
+	function allToFile ( event, rc, prc ) {
+		if(lCase(rc.dataType) == "xml")
+		{
+			var xmlQuotes = [];
+			
+			file = "#expandPath("./")#generated\xml\" & "quoteList.xml";
+			fileWrite(file, ""); //Create the new file, this will overwrite the previous file.
+
+			for(quote in quoteService.list()){
+				quoteObj = quoteService.populate("struct", quote);
+				fileAppend(file, quoteObj.toXML());
+			}
+		}
+		else if(lCase(rc.dataType) == "json")
+		{
+			var jsonQuotes = [];
+
+			file = "#expandPath("./")#generated\json\" & "quoteList.json";
+			fileWrite(file, ""); //Create the new file, this will overwrite the previous file.
+
+
+			for(quote in quoteService.list()){
+				quoteObj = quoteService.populate("struct", quote);
+				fileAppend(file, quoteObj.toJSON());
+			}
+		}else{
+			writeDump(var="What data type do we want to convert to?", label="Handlers/Quotes/AllQuotesTo()")
+		}
+
+		Relocate("quotes.admin");
+	}
 }

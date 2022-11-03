@@ -1,0 +1,85 @@
+{
+    "intBookmarkID": 1,
+    "vcBookmarkDescription": "Regex Generator",
+    "vcBookmarkAddress": "https://ihateregex.io/expr/password/"
+}{
+    "intBookmarkID": 2,
+    "vcBookmarkDescription": "Gradient Generator",
+    "vcBookmarkAddress": "https://cssgradient.io/"
+}{
+    "intBookmarkID": 3,
+    "vcBookmarkDescription": "Coldbox",
+    "vcBookmarkAddress": "https://coldbox.ortusbooks.com/"
+}{
+    "intBookmarkID": 4,
+    "vcBookmarkDescription": "CF-Docs",
+    "vcBookmarkAddress": "https://cfdocs.org/"
+}{
+    "intBookmarkID": 5,
+    "vcBookmarkDescription": "W3-Schools",
+    "vcBookmarkAddress": "https://www.w3schools.com/"
+}{
+    "intBookmarkID": 6,
+    "vcBookmarkDescription": "Data Tables",
+    "vcBookmarkAddress": "https://datatables.net/"
+}{
+    "intBookmarkID": 7,
+    "vcBookmarkDescription": "Bootstrap Icons",
+    "vcBookmarkAddress": "https://icons.getbootstrap.com/"
+}{
+    "intBookmarkID": 8,
+    "vcBookmarkDescription": "Bootstrap Home",
+    "vcBookmarkAddress": "https://getbootstrap.com/"
+}{
+    "intBookmarkID": 9,
+    "vcBookmarkDescription": "Regex playground",
+    "vcBookmarkAddress": "https://regexr.com/"
+}{
+    "intBookmarkID": 10,
+    "vcBookmarkDescription": "Coldfusion playground",
+    "vcBookmarkAddress": "https://cffiddle.org/"
+}{
+    "intBookmarkID": 11,
+    "vcBookmarkDescription": "CodePly(HTML, CSS, JS)",
+    "vcBookmarkAddress": "https://www.codeply.com/"
+}{
+    "intBookmarkID": 12,
+    "vcBookmarkDescription": "YouTrack",
+    "vcBookmarkAddress": "https://youtrack.mod-llc.com/articles/MODIW-A-33751950/JJ-Zettler"
+}{
+    "intBookmarkID": 13,
+    "vcBookmarkDescription": "GitLab",
+    "vcBookmarkAddress": "https://moddevgit.mod-llc.com/mod"
+}{
+    "intBookmarkID": 14,
+    "vcBookmarkDescription": "Personal GitHub",
+    "vcBookmarkAddress": "https://github.com/jjzme2"
+}{
+    "intBookmarkID": 15,
+    "vcBookmarkDescription": "VC Keyboard Shortcut Cheat Sheet",
+    "vcBookmarkAddress": "https://www.crio.do/blog/vs-code-shortcuts/"
+}{
+    "intBookmarkID": 16,
+    "vcBookmarkDescription": "JSON Formatter",
+    "vcBookmarkAddress": "https://jsonformatter.org/"
+}{
+    "intBookmarkID": 17,
+    "vcBookmarkDescription": "CSS Animation Kit",
+    "vcBookmarkAddress": "https://angrytools.com/css/animation/"
+}{
+    "intBookmarkID": 18,
+    "vcBookmarkDescription": "Electron JS ",
+    "vcBookmarkAddress": "https://www.electronjs.org/docs/latest"
+}{
+    "intBookmarkID": 19,
+    "vcBookmarkDescription": "CFC to CFM converter",
+    "vcBookmarkAddress": "https://cfscript.me/"
+}{
+    "intBookmarkID": 20,
+    "vcBookmarkDescription": "PDFLib Cookbook",
+    "vcBookmarkAddress": "https://www.pdflib.com/pdflib-cookbook/interactive/link_annotations/"
+}{
+    "intBookmarkID": 21,
+    "vcBookmarkDescription": "Udemy",
+    "vcBookmarkAddress": "https://www.udemy.com/home/my-courses/learning/"
+}

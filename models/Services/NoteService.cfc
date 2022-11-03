@@ -5,10 +5,7 @@
  * @date    10/12/2022
  * @version 0.1
  */
-component singleton accessors="true" {
-
-	property name = "noteGateway" inject = "Gateways/NoteGateway";
-
+component singleton accessors="true" extends="BaseService"{
 
 	NoteService function init ()
 	{

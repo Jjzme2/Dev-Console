@@ -5,13 +5,7 @@
  * @date    9/20/2022
  * @version 0.1
  */
-component singleton accessors="true" {
-
-	property name = "populator"      inject = "wirebox:populator";
-	property name = "userGateway"    inject = "Gateways/UserGateway";
-	property name = "messageGateway" inject = "Gateways/MessageGateway";
-
-
+component singleton accessors="true" extends="BaseService"{
 
 	UserService function init ()
 	{

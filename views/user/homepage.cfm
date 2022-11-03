@@ -6,14 +6,17 @@
                 <p><em>-#rc.randomQuote.vcQuoteAuthor#</em></p>
             </div>
         </div>
+        
         <div class="mid-page">
             <div class="mid-page-body">
                 <div class="pageHeaderShell">
                     <div class="greeting">
                         <h1 id=#session.LoggedInID#><span name="greetingText" id="greetingText"><!--- Set in dateTime.js ---></span> #rc.user#</h1>
-                        <p name="dayOfWeekText" id="dayOfWeekText"><!--- Set in dateTime.js ---></p>                       
-                        <p name="monthDayText" id="monthDayText"><!--- Set in dateTime.js ---></p>                      
-                        <p name="timeText" id="timeText"><!--- Set in dateTime.js ---></p>
+                        <div>
+                            <p name="dayOfWeekText" id="dayOfWeekText" style="text-align:center;"><!--- Set in dateTime.js ---></p>                       
+                            <p name="monthDayText" id="monthDayText" style="display:inline;"><!--- Set in dateTime.js ---></p>                      
+                            <p name="timeText" id="timeText" style="display:inline;"><!--- Set in dateTime.js ---></p>
+                        </div>
                     </div>
                 </div>
 

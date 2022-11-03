@@ -1,4 +1,4 @@
-component name="User" accessors="true" {
+component name="User" accessors="true" extends="baseObject" {
 
 	property type = "number" name = "intUserID";
 	property type = "string" name = "vcUsername";

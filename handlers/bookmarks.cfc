@@ -64,6 +64,8 @@ component extends="BaseHandler" {
 	{
 		prc.bookmarkTemplate = "../bookmarks/view.cfm";
 		prc.xeh.process  	 = "bookmarks.process";
+		prc.xeh.convert 	 = "bookmarks.allToFile";
+
 
 		rc.bookmarks = bookmarkService.list( );
 	}
@@ -149,6 +151,43 @@ component extends="BaseHandler" {
 	{
 		userService.addLikedBookmark ( id );
 		relocate( "bookmarks.personal" );
+	}
+
+	/**
+	 * Converts all bookmarks to the specified Data type
+	 *
+	 * @dataType A String representing the dataType to generate. JSON/XML
+	 */
+	function allToFile ( event, rc, prc ) {
+		if(lCase(rc.dataType) == "xml")
+		{
+			var xmlQuotes = [];
+			
+			file = "#expandPath("./")#generated\xml\" & "bookmarkList.xml";
+			fileWrite(file, ""); //Create the new file, this will overwrite the previous file.
+
+			for(bookmark in bookmarkService.list()){
+				bookmarkObject = bookmarkService.populate("struct", bookmark);
+				fileAppend(file, bookmarkObject.toXML());
+			}
+		}
+		else if(lCase(rc.dataType) == "json")
+		{
+			var jsonQuotes = [];
+
+			file = "#expandPath("./")#generated\json\" & "bookmarkList.json";
+			fileWrite(file, ""); //Create the new file, this will overwrite the previous file.
+
+
+			for(bookmark in bookmarkService.list()){
+				bookmarkObject = bookmarkService.populate("struct", bookmark);
+				fileAppend(file, bookmarkObject.toJSON());
+			}
+		}else{
+			writeDump(var="What data type do we want to convert to?", label="Handlers/Bookmarks/allToFile()")
+		}
+
+		Relocate("quotes.admin");
 	}
 
 }

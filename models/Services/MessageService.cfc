@@ -5,12 +5,7 @@
  * @date    9/20/2022
  * @version 0.1
  */
-component singleton accessors="true" {
-
-	property name = "populator"      inject = "wirebox:populator";
-	property name = "messageGateway" inject = "Gateways/MessageGateway";
-
-
+component singleton accessors="true" extends="BaseService"{
 
 	MessageService function init ()
 	{
@@ -135,27 +130,4 @@ component singleton accessors="true" {
 		messageGateway.delete( messageID );
 	}
 
-}
-
-
-Message function populate ( required string type, required any data )
-{
-	switch ( type )
-	{
-		case LCase( "struct" ):
-			return populator.populateFromStruct( target = GetEmpty(), memento = data )
-			break;
-		case LCase( "query" ):
-			return populator.populateFromQuery( target = GetEmpty(), qry = data )
-			break;
-		case LCase( "json" ):
-			return populator.populateFromJSON( target = GetEmpty(), JSONString = data )
-			break;
-		case LCase( "xml" ):
-			return populator.populateFromXML( target = GetEmpty(), xml = data )
-			break;
-		default:
-			// What are we populating from?
-			return;
-	}
 }

@@ -5,10 +5,7 @@
  * @date    10/10/2022
  * @version 0.1
  */
-component singleton accessors="true" {
-
-	property name = "bookmarkGateway" inject = "Gateways/BookmarkGateway";
-
+component singleton accessors="true" extends="BaseService" {
 
 	bookmarkService function init ()
 	{
@@ -37,7 +34,7 @@ component singleton accessors="true" {
 	 *
 	 * @bookmarkAddress The Address we want to find a match for.
 	 */
-	boolean function hasbookmark ( required string bookmarkAddress )
+	boolean function hasBookmark ( required string bookmarkAddress )
 	{
 		aStoredbookmarks = List();
 
@@ -71,4 +68,7 @@ component singleton accessors="true" {
 		bookmarkGateway.update( data );
 	}
 
+	Bookmark function getEmpty(){
+		return new models.objects.Bookmark();
+	}
 }

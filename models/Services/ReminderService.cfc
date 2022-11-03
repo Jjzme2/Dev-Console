@@ -5,11 +5,7 @@
  * @date    9/20/2022
  * @version 0.1
  */
-component singleton accessors="true" {
-
-	property name = "populator"       inject = "wirebox:populator";
-	property name = "reminderGateway" inject = "Gateways/ReminderGateway";
-
+component singleton accessors="true" extends="BaseService" {
 
 	ReminderService function init ()
 	{
