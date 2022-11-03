@@ -1,0 +1,114 @@
+/* Declaration */
+@keyframes dancingShadow 
+{
+    50% {text-shadow: 5px 10px 10px grey; color:black;}
+}
+
+@keyframes bounce 
+{			
+    0% {
+        transform:translateY(0);
+        transform-origin:50% 50%;
+        text-shadow:none;
+    }
+    100% {
+        transform:translateY(-50px);
+        transform-origin:50% 50%;
+        text-shadow:0 1px 0 #ccc,0 2px 0 #ccc,0 3px 0 #ccc,0 4px 0 #ccc,0 5px 0 #ccc,0 6px 0 #ccc,0 7px 0 #ccc,0 8px 0 #ccc,0 9px 0 #ccc,0 50px 30px rgba(0,0,0,.3);
+    }
+}
+
+@keyframes slide-right {
+			
+    0% {
+        transform:translateX(0);
+    }
+    100% {
+        transform:translateX(100%);
+        box-shadow:-30px 0 10px grey;
+    }
+}
+
+@keyframes slide-left {
+			
+    0% {
+        transform:translateX(0);
+    }
+    100% {
+        transform:translateX(-100%);
+        box-shadow:30px 0 10px grey;
+    }
+}
+
+@keyframes slide-tr {
+			
+    0% {
+        transform:translateY(0) translateX(0);
+    }
+    100% {
+        transform:translateY(-10%) translateX(10%);
+        box-shadow:-6px 6px 12px grey;
+    }
+}
+
+@keyframes bounce-in-zoomin {
+			
+    0% {
+        transform:scale(7);
+        animation-timing-function:ease-in;
+        opacity:0;
+    }
+    35% {
+        transform:scale(1);
+        animation-timing-function:ease-out;
+        opacity:1;
+    }
+    55% {
+        transform:scale(1.5);
+        animation-timing-function:ease-in;
+    }
+    70% {
+        transform:scale(1);
+        animation-timing-function:ease-out;
+    }
+    80% {
+        transform:scale(1.24);
+        animation-timing-function:ease-in;
+    }
+    90% {
+        transform:scale(1);
+        animation-timing-function:ease-out;
+    }
+    95% {
+        transform:scale(1.04);
+        animation-timing-function:ease-in;
+    }
+    100% {
+        transform:scale(1);
+        animation-timing-function:ease-out;
+    }
+}
+
+/* Generic Calls */
+
+.bounce-anim
+{
+    animation: bounce 1s ease 0s infinite alternate none;
+}
+
+.bounce-in
+{
+    animation: bounce-in-zoomin 1.5s ease-out 0s 1 normal none;
+}
+
+.dancingShadow-anim
+{
+    animation: dancingShadow 3s infinite;
+}
+
+.slide-tr-anim
+{
+    animation: slide-tr 1s ease 0s 1 normal none;
+}
+
+

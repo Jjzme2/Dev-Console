@@ -1,0 +1,177 @@
+/* Generic tables */
+.table
+{
+    box-shadow: -5px 5px 7px rgb(134, 134, 134);
+    padding: 5%;
+}
+
+.table-sm
+{
+    width: 65%;
+}
+
+.tableTitle {
+    font-size: 3rem;
+    font-family: 'Ubuntu Mono', monospace;
+}
+
+.data-header
+{
+    border:none;
+    border-bottom: solid 2px black;
+}
+
+.data-row
+{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.data-row:nth-child(odd)
+{
+    background-color: rgba(46, 46, 46, 0.322);
+    color: rgb(0, 0, 0);
+}
+
+.data-col
+{
+    border: none;
+    text-align: center;
+}
+
+.data-col a:nth-child(odd)
+{
+    text-decoration: none;
+    color: rgb(53, 53, 53);
+}
+
+.data-col a:hover
+{
+    color: blue;
+}
+
+.btn-col
+{
+    background-color: white;
+    border: none;
+    text-align: center;
+    width: 5%;
+}
+
+.btn-col:first-child
+{
+    border-left: solid 2px black;
+}
+
+.data-col:nth-child(even)
+{
+    background-color: rgba(0, 0, 0, 0.25);
+    color: white;
+}
+
+.data-col:first-child
+{
+    border-left: solid 2px black;
+}
+
+/* QuoteTable */
+.quote-table
+{
+    box-shadow: 5px 5px 6px black;
+}
+
+.quote-header
+{
+    background-color: darkslategrey;
+    border-bottom: 3px solid black;
+    color: lightblue;
+}
+
+.quote-row:nth-child(even)
+{
+    background-color: darkslategrey;
+    color: lightblue;
+
+}
+
+.quote-row:nth-child(odd)
+{
+    background-color: darkslategrey;
+    color: skyblue;
+}
+
+.quote-col:nth-child(even)
+{
+    border: 1px solid lightslategray;
+}
+
+.quote-col:nth-child(odd)
+{
+    background-color: lightslategray;
+    border: 1px solid darkslategrey;
+    color: darkslateblue;
+
+}
+
+/* Bookmark Table */
+.bookmark-table
+{
+    box-shadow: 5px 5px 6px black;
+}
+
+.bookmark-header
+{
+    background-color: darkslategrey;
+    border-bottom: 3px solid black;
+    color: lightblue;
+}
+
+.bookmark-row:nth-child(even)
+{
+    background-color: darkslategrey;
+    color: lightblue;
+
+}
+
+.bookmark-row:nth-child(odd)
+{
+    background-color: darkslategrey;
+    color: skyblue;
+}
+
+.bookmark-col:nth-child(even)
+{
+    border: 1px solid lightslategray;
+}
+
+.bookmark-col:nth-child(odd)
+{
+    background-color: lightslategray;
+    border: 1px solid darkslategrey;
+    color: darkslateblue;
+
+}
+
+/* Warning Table */
+.warning-table
+{
+    box-shadow: 1px 1px 10px black;
+}
+
+.warning-header
+{
+    border-bottom: 3px solid black;
+    color: red;
+}
+
+.warning-col
+{
+    border: 1px solid black;
+}
+
+.warning-row:hover
+{
+    background-color: black;
+    box-shadow: -10px 10px 20px brown;
+    color: white;
+    transform:translateY(-10%) translateX(0%);
+}

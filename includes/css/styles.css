@@ -1,0 +1,86 @@
+/* Font Notes
+    font-family: 'Merriweather', serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Ubuntu Mono', monospace;
+*/
+
+/* Global Elements */
+body{
+    font-family: 'Merriweather', serif;
+}
+
+/* Homepage Elements */
+.greeting 
+{
+    align-items: center;
+    align-content: center;
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 60%;
+}
+
+/* Width class changes */
+.w-10
+{
+    width: 10%;
+}
+
+.w-20
+{
+    width: 20%;
+}
+
+.w-30
+{
+    width: 30%;
+}
+
+.w-40
+{
+    width: 40%;
+}
+
+.w-50
+{
+    width: 50%;
+}
+
+.w-60
+{
+    width: 60%;
+}
+
+.w-70
+{
+    width: 70%;
+}
+
+.w-80
+{
+    width: 80%;
+}
+
+.w-90
+{
+    width: 90%;
+}
+
+/* Alignment */
+.centered
+{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.lefted
+{
+    margin-left: 0px;
+    margin-right: auto;
+}
+
+.righted
+{
+    margin-left: auto;
+    margin-right: 0px;
+}

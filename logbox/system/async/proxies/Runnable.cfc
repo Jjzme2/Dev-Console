@@ -1,0 +1,56 @@
+/**
+ * Functional Interface that maps to java.lang.Runnable
+ * See https://docs.oracle.com/javase/8/docs/api/java/lang/Runnable.html
+ */
+component extends="BaseProxy" {
+
+	/**
+	 * Constructor
+	 *
+	 * @target         The lambda or closure that will be the task
+	 * @method         An optional method in case the supplier is a CFC instead of a closure
+	 * @debug          Add debugging or not
+	 * @loadAppContext By default, we load the Application context into the running thread. If you don't need it, then don't load it.
+	 */
+	function init (
+		 required target
+		,method                 = "run"
+		,boolean debug          = false
+		,boolean loadAppContext = true
+	)
+	{
+		super.init( arguments.target, arguments.debug, arguments.loadAppContext );
+		variables.method = arguments.method;
+		return this;
+	}
+
+	function run ()
+	{
+		LoadContext();
+		try
+		{
+			lock name="#GetConcurrentEngineLockName()#" type="exclusive" timeout="60" {
+				if ( IsClosure( variables.target ) || IsCustomFunction( variables.target ) )
+				{
+					variables.target();
+				}
+				else
+				{
+					Invoke( variables.target, variables.method );
+				}
+			}
+		}
+		catch ( any e )
+		{
+			// Log it, so it doesn't go to ether
+			Err( "Error running runnable: #e.message & e.detail#" );
+			Err( "Stacktrace for runnable: #e.stackTrace#" );
+			rethrow;
+		}
+		finally
+		{
+			UnLoadContext();
+		}
+	}
+
+}

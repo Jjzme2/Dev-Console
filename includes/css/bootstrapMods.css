@@ -1,0 +1,54 @@
+.btn a
+{
+    color: white;
+    text-decoration: none;
+}
+
+.btn-md
+{
+    width: 100%;
+    margin: 1% auto;
+}
+
+.dropdown-item:first-child
+{
+    border-top: none
+}
+
+.dropdown-item:last-child
+{
+    border-bottom: none
+}
+
+.dropdown-item
+{
+    border-top: solid 1px black;
+    border-bottom: solid 1px black;
+    padding: 10%;
+}
+
+.dropdown-item:hover
+{
+    background-color: black;
+    color: white;
+}
+
+.modal
+{
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.personal-quote-modal
+{
+    color: lightgrey;
+    text-shadow: -1px 1px 0 royalblue,
+                  1px 1px 0 royalblue,
+                 1px -1px 0 royalblue,
+                -1px -1px 0 royalblue; }
+
+.vertical-button-area
+{
+    display: flex;
+    flex-direction: column;
+    margin-top: 3%;
+}

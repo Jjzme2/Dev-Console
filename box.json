@@ -1,0 +1,45 @@
+{
+    "name":"Dev console",
+    "version":"1.0.0",
+    "author":"You",
+    "location":"",
+    "slug":"dev-console",
+    "createPackageDirectory":false,
+    "type":"mvc",
+    "keywords":"",
+    "homepage":"",
+    "documentation":"",
+    "repository":{
+        "type":"",
+        "url":""
+    },
+    "bugs":"",
+    "shortDescription":"",
+    "contributors":[],
+    "ignore":[],
+    "devDependencies":{
+        "testbox":"*",
+        "commandbox-dotenv":"*",
+        "commandbox-cfconfig":"*",
+        "commandbox-cfformat":"*"
+    },
+    "installPaths":{
+        "coldbox":"coldbox/",
+        "testbox":"testbox/",
+        "cbmessagebox":"modules/cbmessagebox/",
+        "logbox":"logbox/",
+        "cbvalidation":"modules/cbvalidation/",
+        "cbmailservices":"modules/cbmailservices/"
+    },
+    "dependencies":{
+        "coldbox":"^6.0.0",
+        "cbmessagebox":"^4.0.0+58",
+        "logbox":"^6.8.1+5",
+        "cbvalidation":"^3.4.0+14",
+        "cbmailservices":"^2.4.0+83"
+    },
+    "scripts":{},
+    "testbox":{
+        "runner":"/tests/runner.cfm"
+    }
+}

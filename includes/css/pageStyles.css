@@ -1,0 +1,86 @@
+.footer
+{
+    box-shadow: 3px 1px 3px black;
+}
+
+.homepage-reminders
+{
+    /* box-shadow: 3px -3px 6px black; */
+    margin: 3%;
+    min-width: 600px;
+    padding: 5%;
+
+}
+
+.nav
+{
+    box-shadow: -5px 5px 1px rgb(134, 134, 134);
+}
+
+.page
+{
+    margin-top: 3%;
+    padding: 3%;
+}
+
+.pageHeader
+{
+    align-items: center;
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 50%;
+}
+
+.pageHeaderShell
+{
+    display: inline-flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.inner-page
+{
+    /* background-color: grey; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+.left-page
+{
+    /* background-color: red; */
+    display: inline-flex;
+    margin-left: 0px;
+    margin-right: auto;
+    width: 20%;
+}
+
+.mid-page 
+{
+    /* background-color: yellow; */
+    display: inline-flex;
+    flex-direction: column;
+    margin: auto;
+    min-height: 40%;
+    width: 50%;
+}
+
+.mid-page-body
+{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.right-page
+{
+    /* background-color: blue; */
+    display: inline-flex;
+    margin-left: auto;
+    margin-right: 0;
+    width: 20%;
+}

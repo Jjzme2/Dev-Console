@@ -1,0 +1,30 @@
+/* Font Notes
+    font-family: 'Merriweather', serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Ubuntu Mono', monospace;
+*/
+
+.subtitle
+{
+    color: grey;
+    font-size: .65rem;
+}
+
+.quote
+{
+    align-items: center;
+    animation: dancingShadow 3s infinite;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-shadow: -1px 1px 0 rgb(51, 51, 51),
+                  1px 1px 0 rgb(51, 51, 51),
+                 1px -1px 0 rgb(51, 51, 51),
+                -1px -1px 0 rgb(51, 51, 51);
+}
+
+.text-centered
+{
+    text-align: center;
+}
